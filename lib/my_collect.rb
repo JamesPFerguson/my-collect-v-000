@@ -3,13 +3,14 @@ def my_collect(array)
   if block_given?
 
     i = 0
-
+    collection = []
     while i < array.length
-      yield array[i]
+      collection << yield(array[i])
       i += 1
     end
+
   end
-    array
+  array
 end
 
 my_collect(["Tim", "Tom", "Jim"]) {|name| puts "Hello #{name}"}
