@@ -10,3 +10,4 @@ def my_collect(array)
   end
   array
 end
+my_collect(["Tim", "Tom", "Jim"])
