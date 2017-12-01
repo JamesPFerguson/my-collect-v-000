@@ -8,8 +8,8 @@ def my_collect(array)
       yield array[i]
       i += 1
     end
-    array
   end
+    array
 end
 
 my_collect(["Tim", "Tom", "Jim"]) {|name| puts "Hello #{name}"}
